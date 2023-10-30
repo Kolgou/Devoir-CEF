@@ -9,17 +9,21 @@ header{
     position: center;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-
-}
-
 #entete{
     display: flex;
-    justify-content: center;
+    align-items: center;
     color: white;
+    flex-direction: column;
+
 }
+
+#photo-de-profil{
+    display: flex;
+    border-radius: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 200%;
+}
+
 
 #flex-row1{
     display: flex;
@@ -31,19 +35,6 @@ footer{
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-#flex-row2{
-    display: flex;
-    flex-direction: row;
-}
-
-
-#photo-de-profil{
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 200%;
-    
 }
 
 #adresse{
@@ -59,21 +50,72 @@ footer{
     margin-right: 10px;
 }
 
-#left {
-    background-color: #dbc2a4;
-    width: 20%;
-    padding-left: 10px;
-    line-height: 110%;
-    color: black;
-
-}
-
-p {
-    padding-left: 20px;
-    text-indent: 3%;
+#page_pr{
+    display: flex;
+    flex-direction: row;
 }
 
 #g{
     color: white;
+    width:max-content;
 }
 
+#left {
+    background-color: #dbc2a4;
+    width: 80%;
+    padding-left: 10px;
+    line-height: 110%;
+    color: black;
+}
+
+#phrase{
+    display: grid;
+    grid-template-columns: 80%;
+    padding-left: 20px;
+    text-indent: 15%;
+
+
+}
+
+#d {
+    display: flex;
+    background-color: white;
+    width: 300%;
+    padding-right: 10px;
+    line-height: 110%;
+    color: black;
+    flex-direction: column;
+}
+
+#right{
+    text-indent: 3%;
+    background-color: #dbc2a4;
+    height: 20px;
+    padding-top: 3px;
+    border-left: 4px solid black;
+}
+
+#phrase2{
+    text-indent: 3%;
+
+
+}
+
+
+#flex-row2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+small{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
