@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Police\ Ralway/');
+}
+
+
+
+
 main{
     margin: auto;
     max-width: 1160px;
@@ -11,6 +19,7 @@ header{
 
 #entete{
     display: flex;
+    padding-top: 30px;
     align-items: center;
     color: white;
     flex-direction: column;
@@ -72,14 +81,18 @@ header{
 #page_pr{
     display: flex;
     flex-direction: row;
-}
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-style: italic
+    };
+
 
 #g{
     color: white;
     width:max-content;
 }
 
-#left {
+.left {
     background-color: #dbc2a4;
     width: 80%;
     padding-left: 10px;
@@ -96,6 +109,18 @@ header{
 
 }
 
+h1{
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+}
+
 #d {
     display: flex;
     background-color: white;
@@ -106,7 +131,7 @@ header{
     flex-direction: column;
 }
 
-#right{
+.right{
     text-indent: 3%;
     background-color: #dbc2a4;
     height: 20px;
