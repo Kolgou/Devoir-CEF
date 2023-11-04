@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('./Raleway/');
+    src: url('./Raleway/static/Raleway-Italic.ttf');
+    src: url('./Raleway/static/Raleway-Bold.ttf');
+    src: url('./Raleway/static/Raleway-Regular.ttf');
+
 }
 
 
@@ -10,89 +13,95 @@ main{
     margin: auto;
     max-width: 1160px;
     background-color: #782221 ;
-    border-right: 2px solid black;
+    border-right: 4px solid black;
+    padding-bottom: 30px;
 }
 
 header{
-    position: center;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
 }
 
-#entete{
+.entete{
     display: flex;
     padding-top: 30px;
     align-items: center;
     color: white;
     flex-direction: column;
-
 }
+    
 
-#photo-de-profil{
+
+.entete__photo-de-profil{
     display: flex;
     border-radius: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 200%;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 50);
+    width: 120px;
+    height: 120px;
 }
 
 
-#flex-row1{
+
+
+.flex-row1{
     display: flex;
     flex-direction: row;
     background-color: #2c1d27;
     height: 45px;
+    width: 1139px;
     padding-top: 20px;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#adresse{
+.flex-row1__adresse{
     color: white;
     margin-left: 10px;
     text-decoration: none;
 }
 
-#adresse:hover{
+.flex-row1__adresse:hover{
     text-decoration: underline;
 }
 
-#ml{
+.flex-row1__ml{
     color: white;
     float: none;
     text-decoration: none;
     padding-right: 7%;
 }
 
-#ml:hover{
+.flex-row1__ml:hover{
     text-decoration: underline;
 }
 
-#tel{
+.flex-row1__tel{
     color: white;
     margin-right: 10px;
     text-decoration: none;
 }
 
-#tel:hover{
+.flex-row1__tel:hover{
     text-decoration: underline;
 
 }
 
-#page_pr{
+.page_pr{
     display: flex;
     flex-direction: row;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-style: italic
-    };
+    font-style: italic;
+    }
 
 
-#g{
+.page_pr__g{
     color: white;
     width:max-content;
 }
 
-.left {
+.page_pr__g__left {
     background-color: #dbc2a4;
     width: 80%;
     padding-left: 10px;
@@ -100,12 +109,12 @@ header{
     color: black;
 }
 
-#phrase{
+.page_pr__g__phrase{
     display: grid;
     grid-template-columns: 80%;
-    padding-left: 20px;
-    text-indent: 15%;
-
+    text-indent: 25px;
+    padding-left: 10px;
+    color: white;
 
 }
 
@@ -121,7 +130,7 @@ h3{
     font-family: 'Lato', sans-serif;
 }
 
-#d {
+.page_pr__d {
     display: flex;
     background-color: white;
     width: 300%;
@@ -131,47 +140,54 @@ h3{
     flex-direction: column;
 }
 
-.right{
-    text-indent: 3%;
+.page_pr__d__right{
     background-color: #dbc2a4;
     height: 20px;
     padding-top: 3px;
     border-left: 4px solid black;
 }
 
-#phrase2{
-    text-indent: 3%;
-
+.page_pr__d__phrase{
+    text-indent: 20px;
 
 }
 
-
-#flex-row2{
-    display: flex;
-    flex-direction: row;
+.page_pr__d__lp{
+    color: white;
 }
 
-#rs1:hover{
-    transition: opacity 0.3s;
-    opacity: 0.7;
+.page_pr__d__ci{
+    color: white;
 }
-
-#rs2:hover{
-    transition: opacity 0.3s;
-    opacity: 0.7;
-}
-
-#rs3:hover{
-    transition: opacity 0.3s;
-    opacity: 0.7;
-}
-
 
 footer{
     display: flex;
     justify-content: center;
 
 }
+
+
+.flex-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row2__rs1:hover{
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.flex-row2__rs2:hover{
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.flex-row2__rs3:hover{
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
 
 small{
     display: flex;
